@@ -1,0 +1,109 @@
+:root{
+	--white: #FFFFFF;
+	--gris: #666666;
+	--amber: #ffc400;
+}
+
+@font-face {
+	font-family: 'Oswald-Light';
+	src: url('../fonts/Oswald-Light.ttf');
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 1rem;
+	background: url('../colores-y-fondo2.jpg');
+	color: var(--white);
+	font-family: Oswald-Light;
+}
+
+section .gallardete{
+	width: 50%;
+	filter: drop-shadow(0px 0px 10px var(--amber));
+}
+
+.tarjeta-principal{
+	background-image: url('../colores-y-fondo3.jpg');
+	background-size: cover;
+	border-radius: 30px;
+	min-height: 75vh;
+	position: relative;
+}
+
+.contenedor1{
+	background-image: url('../mari-juan2.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.contenedor1 img{
+	width: 100%;
+	object-fit: contain;
+	border-radius: 15px;
+}
+
+.contenedor1{
+	background-color: var(--amber);
+	width: 400px;
+	height: 400px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 20px 3px var(--gris);
+}
+
+.contenedor2{
+	width: 400px;
+	height: 100px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 20px 3px var(--gris);
+}
+
+.contenedor3{
+	width: 400px;
+	height: 250px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 20px 3px var(--gris);
+}
+
+.imagen-galeria{
+	cursor: pointer;
+}
+
+.galeria img{
+	object-fit: contain;
+	border-radius: 10px;
+	transition: transform 0.8s;
+}
+
+.galeria img:hover{
+	transform: scale(2);
+}
+
+.contenedor2, .contenedor3{
+	background: url('../colores-y-fondo2.jpg');
+	background-size: cover;
+	font-family: Oswald-Light;
+}
+
+p{
+	padding: 1.5rem;
+	text-align: justify;
+	font-size: 1.2rem;
+}
+
+@media screen and (max-width: 490px) {
+	section .gallardete{
+		width: 75%;
+	}
+
+	.contenedor1{
+		width: 250px;
+		height: 250px;
+	}
+
+	p{
+		padding: 1rem;
+		font-size: 1rem;
+	}
+}
